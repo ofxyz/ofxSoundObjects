@@ -8,8 +8,13 @@
 #pragma once
 
 #include "ofMain.h"
-#include "dr_wav.h"
 #include "ofxAudioFile.h"
+
+struct drwav;
+
+// File I/O: decode via ofxAudioFile (WAV/MP3/FLAC/OGG). dr_wav (from ofxAudioFile/libs)
+// is used only for WAV streaming (openFileStream/readTo) and PCM WAV save — not for normal load().
+
 /// reads a sound file into an ofSoundBuffer.
 /// encoding support varies by platform.
 bool ofxLoadSound(ofSoundBuffer &buffer, std::string path);

@@ -8,9 +8,10 @@
 
 #pragma once
 
-#include "ofxSoundObjects.h"
+#include "ofxSoundObject.h"
 #include "ofxSoundObjectsConstants.h"
-#include "dr_wav.h"
+
+struct drwav;
 
 #ifdef OFX_SOUND_ENABLE_THREADED_RECORDER
 class ofxSoundRecorderObject:   public ofThread, public ofxSoundObject  {

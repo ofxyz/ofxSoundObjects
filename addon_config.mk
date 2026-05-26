@@ -32,6 +32,8 @@ common:
 	ADDON_INCLUDES = src
 	ADDON_INCLUDES += src/SoundObjects
 	ADDON_INCLUDES += src/Renderers
+	ADDON_INCLUDES += ../ofxAudioFile/src
+	ADDON_INCLUDES += ../ofxAudioFile/libs
 	# any special flag that should be passed to the compiler when using this
 	# addon
 	# ADDON_CFLAGS =
@@ -82,8 +84,9 @@ linux:
 	ADDON_INCLUDES += ../ofxFft/libs/kiss
 	ADDON_INCLUDES += ../ofxFft/libs/src
 msys2:
-	
-	
+	ADDON_INCLUDES += ../ofxAudioFile/src
+	ADDON_INCLUDES += ../ofxAudioFile/libs
+
 vs:
 	
 linuxarmv6l:

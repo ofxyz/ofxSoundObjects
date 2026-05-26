@@ -7,6 +7,7 @@
 //
 
 #include "ofxSoundRecorderObject.h"
+#include "dr_wav.h"
 
 
 //--------------------------------------------------------------
